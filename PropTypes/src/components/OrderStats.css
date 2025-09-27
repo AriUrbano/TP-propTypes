@@ -1,0 +1,75 @@
+.order-stats {
+  margin-bottom: 30px;
+}
+
+.order-stats h2 {
+  color: #ffffff;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+.stat-card {
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.95);
+  border: 3px solid;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.stat-card.total {
+  border-color: #FFD700;
+  background: linear-gradient(135deg, #FFF8DC, #FFEBCD);
+}
+
+.stat-card.pending {
+  border-color: #8B0000;
+  background: linear-gradient(135deg, #FFE4E1, #FFB6C1);
+}
+
+.stat-card.shipped {
+  border-color: #00008B;
+  background: linear-gradient(135deg, #E6E6FA, #B0C4DE);
+}
+
+.stat-card.delivered {
+  border-color: #006400;
+  background: linear-gradient(135deg, #F0FFF0, #98FB98);
+}
+
+.stat-card h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #8B0000;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.stat-card.shipped .stat-number {
+  color: #00008B;
+}
+
+.stat-card.delivered .stat-number {
+  color: #006400;
+}

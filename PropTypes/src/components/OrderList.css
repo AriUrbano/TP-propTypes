@@ -1,0 +1,18 @@
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.order-list.empty {
+  text-align: center;
+  padding: 60px 40px;
+  color: #ffffff;
+  font-style: italic;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  border: 2px dashed #FFD700;
+  width: 100%;
+}

@@ -1,0 +1,97 @@
+.order-item {
+  border: 3px solid #FFD700;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.order-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #00008B;
+}
+
+.order-header h3 {
+  margin: 0;
+  color: #8B0000;
+  font-size: 1.5rem;
+}
+
+.order-status {
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid;
+}
+
+.order-status.pending {
+  background: linear-gradient(135deg, #FFE4E1, #FFB6C1);
+  color: #8B0000;
+  border-color: #8B0000;
+}
+
+.order-status.shipped {
+  background: linear-gradient(135deg, #E6E6FA, #B0C4DE);
+  color: #00008B;
+  border-color: #00008B;
+}
+
+.order-status.delivered {
+  background: linear-gradient(135deg, #F0FFF0, #98FB98);
+  color: #006400;
+  border-color: #006400;
+}
+
+.order-info p {
+  margin: 8px 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.order-info strong {
+  color: #8B0000;
+}
+
+.order-products h4 {
+  margin: 15px 0 10px 0;
+  color: #00008B;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #FFD700;
+  padding-bottom: 5px;
+}
+
+.order-products ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-products li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  font-size: 1rem;
+}
+
+.order-total {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 3px solid #8B0000;
+  text-align: right;
+  font-size: 1.3rem;
+  color: #8B0000;
+  font-weight: bold;
+}
